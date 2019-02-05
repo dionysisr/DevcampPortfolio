@@ -1,0 +1,19 @@
+<h1>Homepage</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<%= render "blogs/postsTable" %>
+
+<br>
+<%= @blogs.inspect %>
+
+<br><br><br>
+<% require 'pp' %>
+<%= pp @blogs.inspect %>
+
+<br><br><br>
+<% require 'pry' %>
+<%= Pry::ColorPrinter.pp(@blogs.inspect) %>
+
+<br><br><br>
+New test:
+<%= show_data @blogs.inspect  %> <!-- den doulevei meta tis 2 -->
