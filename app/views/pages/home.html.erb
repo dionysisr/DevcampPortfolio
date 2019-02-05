@@ -1,6 +1,8 @@
 <h1>Homepage</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+<h2>Blog Posts (in several layouts)</h2>
+
 <%= render "blogs/postsTable" %>
 
 <br>
@@ -17,3 +19,9 @@
 <br><br><br>
 New test:
 <%= show_data @blogs.inspect  %> <!-- den doulevei meta tis 2 -->
+
+<br>
+<br>
+<br>
+<h2>SKILLS:</h2>
+<%= @skills.inspect %>
