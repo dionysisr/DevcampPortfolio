@@ -30,8 +30,8 @@ portfolios.times do |n|
 		title: "Portfolio Item #{n}",
 		subtitle: "My fantastic service #{n}",
         body: "#{n}. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        main_image: "https://via.placeholder.com/350x200?text=PHILOKRATOS #{n}",
-        thumb_image: "https://via.placeholder.com/600x400/0000FF/808080 ?Text=Digital.com"
+        thumb_image: "https://via.placeholder.com/350x200?text=PHILOKRATOS #{n}",
+        main_image: "https://via.placeholder.com/600x400/0000FF/808080 ?Text=Digital.com"
 		)
 end
 puts  "#{portfolios} portfolio items created"
