@@ -1,7 +1,26 @@
 class PortfoliosController < ApplicationController
 	def index
 		@portfolios = Portfolio.all
-		puts "*******************************************************"
-		puts @portfolios
 	end
+
+	def new
+		@portfolio = Portfolio.new
+	end
+
+	def create
+	end
+
+	def create
+		@portfolio = Portfolio.new(portfolio_params)
+	  if @portfolio.save
+	     redirect_to portfolios_path, notice: 'portfolio was successfully created.' 
+	  end
+	end
+
+  private
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def portfolio_params
+      params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
+    end	
 end
+
