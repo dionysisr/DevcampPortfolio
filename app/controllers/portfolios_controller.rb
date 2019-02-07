@@ -17,6 +17,17 @@ class PortfoliosController < ApplicationController
 	  end
 	end
 
+	def edit
+		@portfolio = Portfolio.find(params[:id])
+	end
+
+  def update
+  	@portfolio = Portfolio.find(params[:id])
+    if @portfolio.update(portfolio_params)
+      redirect_to portfolios_path, notice: 'Portfolio was successfully updated.' 
+    end
+  end
+
   private
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
