@@ -28,6 +28,11 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def show
+		@portfolio = Portfolio.find(params[:id])
+	end
+
+
   private
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
