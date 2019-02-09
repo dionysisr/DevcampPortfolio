@@ -8,9 +8,6 @@ class PortfoliosController < ApplicationController
 	end
 
 	def create
-	end
-
-	def create
 		@portfolio = Portfolio.new(portfolio_params)
 	  if @portfolio.save
 	     redirect_to portfolios_path, notice: 'portfolio was successfully created.' 
@@ -31,6 +28,12 @@ class PortfoliosController < ApplicationController
   def show
 		@portfolio = Portfolio.find(params[:id])
 	end
+
+  def destroy
+  	@portfolio = Portfolio.find(params[:id])
+	  @portfolio.destroy
+    redirect_to portfolios_url, notice: "'Portfolio #{params[:id]}' was successfully deleted."
+  end
 
 
   private
