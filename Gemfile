@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# 66. How to Implement Permalinks in a Rails Application - Part 1 of 2 [2:00/17:26]
+gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+
 
 # DRR put these gems to pretty print...
 gem "pry"
