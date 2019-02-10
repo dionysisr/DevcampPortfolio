@@ -1,0 +1,8 @@
+<% portfolio = @portfolio %> 
+
+   <%= image_tag portfolio.main_image if portfolio.main_image  %>
+   <h1><%= portfolio.title %>  </h1>
+   <p><%= portfolio.subtitle %> </p>
+   <p><%= portfolio.body %> </p>
+   <%= image_tag portfolio.thumb_image if portfolio.thumb_image  %>
+   <%= link_to "Edit", edit_portfolio_path(portfolio.id) %> 
